@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us – Stackly Florist</title>
+  <link rel="stylesheet" href="../css/css.css">
+<style>
+  
+  
+</style>
+  
+  <meta name="description" content="Learn about Stackly Florist, our mission, team, and journey in redefining flower delivery experiences.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f172a',
+            accent: '#f43f5e'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-700">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    
+ <a href="../home-1/index.html" class="flex items-center ml-10 gap-3">
+
+  <img src="../images/logo.svg"
+       alt="Rose & Stem Logo"
+       class="h-14 w-auto dark:invert">
+
+  <div class="text-xl font-semibold tracking-wide">
+     <span class="text-accent">Rose </span>&<span class="text-accent"> Stem</span> 
+  </div>
+
+</a>
+
+    
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium relative">
+      
+<div class="relative group">
+
+<button class="flex items-center gap-1 hover:text-accent">
+Home <span class="text-xs">▾</span>
+</button>
+
+<div class="absolute left-0 top-full mt-3 w-60 bg-white dark:bg-gray-800 rounded-xl shadow-xl
+opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+
+<a href="../home-1/index.html"
+class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
+Home for Customers
+</a>
+
+<a href="../home-2/home-2.html"
+class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
+Home for Business Owners
+</a>
+
+</div>
+</div>
+
+<a href="../services/gallery.html" class="hover:text-accent">Gallery</a>
+
+      
+<div class="relative group">
+
+<button class="flex items-center gap-1 hover:text-accent">
+Services <span class="text-xs">▾</span>
+</button>
+
+<div class="absolute left-0 top-full mt-3 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-xl
+opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+
+<a href="../services/service-details-1.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Recurring Flower Delivery</a>
+
+<a href="../services/service-details-2.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Event & Wedding Flowers</a>
+
+<a href="../services/service-details-3.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Same-Day Delivery</a>
+
+<a href="../services/service-details-4.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Corporate Gifting</a>
+
+<a href="../services/service-details-5.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Custom Floral Design</a>
+
+<a href="../services/service-details-6.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">International Delivery</a>
+
+</div>
+</div>
+
+      <a href="about.html" class="text-accent">About</a>
+      
+<div class="relative group">
+
+<button class="flex items-center gap-1 hover:text-accent">
+Blog <span class="text-xs">▾</span>
+</button>
+
+<div class="absolute left-0 top-full mt-3 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-xl
+opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+
+<a href="../blogs/blog1.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Choosing Flowers for Every Occasion</a>
+
+<a href="../blogs/blog2.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Seasonal Flowers You’ll Love</a>
+
+<a href="../blogs/blog3.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Flower Arranging Like a Pro</a>
+
+<a href="../blogs/blog4.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Common Flower Care Mistakes</a>
+
+<a href="../blogs/blog5.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Meaning Behind Popular Flowers</a>
+
+<a href="../blogs/blog6.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">How Florists Keep Flowers Fresh</a>
+
+</div>
+</div>
+      <a href="../pricing/pricing.html" class="hover:text-accent">Pricing</a>
+      <a href="../contact/contact.html" class="hover:text-accent">Contact</a>
+
+       
+      <button id="themeToggle" aria-label="Toggle theme"  class="icon-btn" aria-label="Toggle theme">🌙</button>
+
+      
+      <button id="rtlToggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+    </nav>
+
+    
+    <div class="flex items-center gap-3 md:hidden">
+      <button id="themeToggleMobile" class="icon-btn">🌙</button>
+      <button id="rtlToggleMobile" class="icon-btn">RTL</button>
+
+      
+      <button id="menuBtn" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div
+    id="mobileMenu"
+    class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
+  >
+    <nav class="flex flex-col px-6 py-6 gap-4 text-sm font-medium">
+      
+<details>
+<summary class="cursor-pointer">Home</summary>
+<div class="pl-4 mt-2 flex flex-col gap-2">
+<a href="../home-1/index.html">Home for Customers</a>
+<a href="../home-2/home-2.html">Home for Business Owners</a>
+</div>
+</details>
+      <a href="../services/gallery.html">Gallery</a>
+      
+<details>
+<summary class="cursor-pointer">Services</summary>
+<div class="pl-4 mt-2 flex flex-col gap-2">
+<a href="../services/service-details-1.html">Recurring Flower Delivery</a>
+<a href="../services/service-details-2.html">Event & Wedding Flowers</a>
+<a href="../services/service-details-3.html">Same-Day Delivery</a>
+<a href="../services/service-details-4.html">Corporate Gifting</a>
+<a href="../services/service-details-5.html">Custom Floral Design</a>
+<a href="../services/service-details-6.html">International Delivery</a>
+</div>
+</details>
+      <a href="about.html" class="text-accent">About</a>
+      
+<details>
+<summary class="cursor-pointer">Blog</summary>
+<div class="pl-4 mt-2 flex flex-col gap-2">
+<a href="../blogs/blog1.html">Choosing Flowers for Every Occasion</a>
+<a href="../blogs/blog2.html">Seasonal Flowers You’ll Love</a>
+<a href="../blogs/blog3.html">Flower Arranging Like a Pro</a>
+<a href="../blogs/blog4.html">Common Flower Care Mistakes</a>
+<a href="../blogs/blog5.html">Meaning Behind Popular Flowers</a>
+<a href="../blogs/blog6.html">How Florists Keep Flowers Fresh</a>
+</div>
+</details>
+      <a href="../pricing/pricing.html">Pricing</a>
+      <a href="../contact/contact.html">Contact</a>
+      <hr class="border-gray-200 dark:border-gray-700 my-2">
+      <a href="../signin/login.html">Login</a>
+      <a href="../signin/register.html">Register</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="py-28">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <span class="text-sm font-semibold text-accent">About Stackly Florist</span>
+    <h1 class="text-5xl font-extrabold mt-4 mb-6">
+      Flowers With Purpose & Passion
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-300">
+      We help people celebrate life’s most meaningful moments through thoughtful floral experiences.
+    </p>
+  </div>
+</section>
+
+
+<section class="py-24 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+    <div>
+      <h2 class="text-4xl font-bold mb-6">Our Mission</h2>
+      <p class="text-gray-600 dark:text-gray-300 mb-6">
+        Stackly Florist was founded to simplify gifting flowers for special occasions.
+        From anniversaries to corporate events, our platform automates reminders,
+        subscriptions, and deliveries — so you never forget what matters most.
+      </p>
+      <p class="text-gray-600 dark:text-gray-300">
+        We believe flowers aren’t just products — they’re emotional experiences.
+      </p>
+    </div>
+
+    
+    <div class="relative overflow-hidden">
+      <img
+        src="mission.webp"
+        alt="Florist Team at Work"
+        class="mission-image rounded-[32px] w-full h-[420px] object-cover
+               transform translate-x-32 opacity-0 transition-all duration-700 ease-out"
+      >
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const img = document.querySelector('.mission-image');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          img.classList.remove('translate-x-32','opacity-0');
+          img.classList.add('translate-x-0','opacity-100');
+          observer.unobserve(img); // animate only once
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(img);
+  });
+</script>
+
+
+<section class="py-28">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-4xl font-bold text-center mb-20">Our Journey</h2>
+
+    <div class="space-y-14">
+
+      <div class="flex gap-8">
+        <div class="text-accent font-bold">2018</div>
+        <p class="text-gray-600 dark:text-gray-300">
+          Stackly Florist was founded with a simple goal: make flower gifting effortless.
+        </p>
+      </div>
+
+      <div class="flex gap-8">
+        <div class="text-accent font-bold">2020</div>
+        <p class="text-gray-600 dark:text-gray-300">
+          Launched subscription-based flower deliveries and reminder system.
+        </p>
+      </div>
+
+      <div class="flex gap-8">
+        <div class="text-accent font-bold">2023</div>
+        <p class="text-gray-600 dark:text-gray-300">
+          Expanded to 120+ partner florists with nationwide delivery coverage.
+        </p>
+      </div>
+
+      <div class="flex gap-8">
+        <div class="text-accent font-bold">2026</div>
+        <p class="text-gray-600 dark:text-gray-300">
+          Introduced customer dashboards, analytics, and smart scheduling tools.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-24 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Meet Our Team</h2>
+      <p class="text-gray-600 dark:text-gray-300">
+        Passionate people behind every beautiful bouquet.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      
+      <div class="team-member text-center">
+        <img class="team-img mx-auto rounded-full w-40 h-40 object-cover mb-4 transform scale-90 opacity-0 transition-all duration-700 ease-out"
+             src="person-1.jpg"
+             alt="Rakesh Sharma">
+        <h3 class="font-semibold text-lg">Rakesh Sharma</h3>
+        <p class="text-sm opacity-70">Founder & CEO</p>
+      </div>
+
+      
+      <div class="team-member text-center">
+        <img class="team-img mx-auto rounded-full w-40 h-40 object-cover mb-4 transform scale-90 opacity-0 transition-all duration-700 ease-out"
+             src="person-3.jpg"
+             alt="Haritha Patel">
+        <h3 class="font-semibold text-lg">Haritha Patel</h3>
+        <p class="text-sm opacity-70">Operations Manager</p>
+      </div>
+
+      
+      <div class="team-member text-center">
+        <img class="team-img mx-auto rounded-full w-40 h-40 object-cover mb-4 transform scale-90 opacity-0 transition-all duration-700 ease-out"
+             src="person-2.jpg"
+             alt="Varun Trimurthi">
+        <h3 class="font-semibold text-lg">Varun Trimurthi</h3>
+        <p class="text-sm opacity-70">Creative Director</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const teamImages = document.querySelectorAll('.team-img');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.remove('scale-90', 'opacity-0');
+        entry.target.classList.add('scale-100', 'opacity-100');
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, { threshold: 0.3 });
+
+  teamImages.forEach(img => observer.observe(img));
+
+  // Optional: Hover luxury effect
+  teamImages.forEach(img => {
+    img.addEventListener('mouseenter', () => {
+      img.classList.add('scale-105','-translate-y-2','shadow-2xl');
+    });
+    img.addEventListener('mouseleave', () => {
+      img.classList.remove('scale-105','-translate-y-2','shadow-2xl');
+    });
+  });
+});
+</script>
+
+
+<section class="py-28">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl font-bold mb-16">What Our Customers Say</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="border border-gray-200 dark:border-gray-700 p-10 rounded-3xl">
+        <p class="italic mb-6">
+          “Stackly helped me never miss my anniversary again. The reminders are a lifesaver.”
+        </p>
+        <h4 class="font-semibold">— Sarah M.</h4>
+      </div>
+
+      <div class="border border-gray-200 dark:border-gray-700 p-10 rounded-3xl">
+        <p class="italic mb-6">
+          “Beautiful flowers, on-time delivery, and an amazing dashboard experience.”
+        </p>
+        <h4 class="font-semibold">— James L.</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-28 bg-gray-100 dark:bg-primary
+text-gray-900 dark:text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6">
+      Ready to Celebrate Every Moment?
+    </h2>
+    <p class="text-lg opacity-90 mb-10">
+      Join thousands of customers who trust Stackly Florist.
+    </p>
+    <a href="../pricing/pricing.html" class="bg-[#FF5F7F] text-white dark:bg-white dark:text-primary px-12 py-4 rounded-full font-semibold hover:opacity-90 transition duration-300">
+      View Pricing
+    </a>
+  </div>
+</section>
+
+
+<div id="footer"></div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script>
+  const html = document.documentElement;
+
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    menuBtn.classList.toggle('active');
+  });
+
+  
+  const themeButtons = [
+    document.getElementById('themeToggle'),
+    document.getElementById('themeToggleMobile')
+  ];
+
+  function updateThemeIcon() {
+    themeButtons.forEach(btn => {
+      if (btn) btn.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  }
+
+  if (
+    localStorage.getItem('theme') === 'dark' ||
+    (!localStorage.getItem('theme') &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    html.classList.add('dark');
+  }
+
+  updateThemeIcon();
+
+  themeButtons.forEach(btn => {
+    btn?.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+      updateThemeIcon();
+    });
+  });
+
+  
+  const rtlButtons = [
+    document.getElementById('rtlToggle'),
+    document.getElementById('rtlToggleMobile')
+  ];
+
+  function setRTL(isRTL) {
+    html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+    localStorage.setItem('rtl', isRTL ? 'true' : 'false');
+  }
+
+  if (localStorage.getItem('rtl') === 'true') {
+    setRTL(true);
+  }
+
+  rtlButtons.forEach(btn => {
+    btn?.addEventListener('click', () => {
+      const isRTL = html.getAttribute('dir') !== 'rtl';
+      setRTL(isRTL);
+    });
+  });
+</script>
+<script>
+  fetch('../footer/footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+</script>
+</body>
+</html>

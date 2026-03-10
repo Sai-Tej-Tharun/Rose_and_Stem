@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pricing – Stackly Florist</title>
+  <link rel="stylesheet" href="../css/css.css">
+
+<style>
+  
+</style>
+  
+  <meta name="description" content="Simple and flexible Pricing plans for flower delivery subscriptions and special events.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f172a',
+            accent: '#f43f5e'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-700">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    
+    
+<a href="../home-1/index.html" class="flex items-center ml-10 gap-3">
+
+  <img src="../images/logo.svg"
+       alt="Rose & Stem Logo"
+       class="h-14 w-auto dark:invert">
+
+  <div class="text-xl font-semibold tracking-wide">
+     <span class="text-accent">Rose </span>&<span class="text-accent"> Stem</span> 
+  </div>
+
+</a>
+    
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium relative">
+      
+<div class="relative group">
+
+<button class="flex items-center gap-1 hover:text-accent">
+Home <span class="text-xs">▾</span>
+</button>
+
+<div class="absolute left-0 top-full mt-3 w-60 bg-white dark:bg-gray-800 rounded-xl shadow-xl
+opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+
+<a href="../home-1/index.html"
+class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
+Home for Customers
+</a>
+
+<a href="../home-2/home-2.html"
+class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
+Home for Business Owners
+</a>
+
+</div>
+</div>
+
+<a href="../services/gallery.html" class="hover:text-accent">Gallery</a>
+
+      
+<div class="relative group">
+
+<button class="flex items-center gap-1 hover:text-accent">
+Services <span class="text-xs">▾</span>
+</button>
+
+<div class="absolute left-0 top-full mt-3 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-xl
+opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+
+<a href="../services/service-details-1.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Recurring Flower Delivery</a>
+
+<a href="../services/service-details-2.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Event & Wedding Flowers</a>
+
+<a href="../services/service-details-3.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Same-Day Delivery</a>
+
+<a href="../services/service-details-4.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Corporate Gifting</a>
+
+<a href="../services/service-details-5.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Custom Floral Design</a>
+
+<a href="../services/service-details-6.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">International Delivery</a>
+
+</div>
+</div>
+
+      <a href="../about/about.html" class="hover:text-accent">About</a>
+      
+<div class="relative group">
+
+<button class="flex items-center gap-1 hover:text-accent">
+Blog <span class="text-xs">▾</span>
+</button>
+
+<div class="absolute left-0 top-full mt-3 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-xl
+opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+
+<a href="../blogs/blog1.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Choosing Flowers for Every Occasion</a>
+
+<a href="../blogs/blog2.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Seasonal Flowers You’ll Love</a>
+
+<a href="../blogs/blog3.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Flower Arranging Like a Pro</a>
+
+<a href="../blogs/blog4.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Common Flower Care Mistakes</a>
+
+<a href="../blogs/blog5.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">Meaning Behind Popular Flowers</a>
+
+<a href="../blogs/blog6.html" class="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">How Florists Keep Flowers Fresh</a>
+
+</div>
+</div>
+      <a href="pricing.html" class="text-accent">Pricing</a>
+      <a href="../contact/contact.html" class="hover:text-accent">Contact</a>
+
+       
+      <button id="themeToggle" aria-label="Toggle theme"  class="icon-btn" aria-label="Toggle theme">🌙</button>
+
+      
+      <button id="rtlToggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+    </nav>
+
+    
+    <div class="flex items-center gap-3 md:hidden">
+      <button id="themeToggleMobile" class="icon-btn">🌙</button>
+      <button id="rtlToggleMobile" class="icon-btn">RTL</button>
+
+      
+      <button id="menuBtn" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div
+    id="mobileMenu"
+    class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
+  >
+    <nav class="flex flex-col px-6 py-6 gap-4 text-sm font-medium">
+      
+<details>
+<summary class="cursor-pointer">Home</summary>
+<div class="pl-4 mt-2 flex flex-col gap-2">
+<a href="../home-1/index.html">Home for Customers</a>
+<a href="../home-2/home-2.html">Home for Business Owners</a>
+</div>
+</details>
+      <a href="../services/gallery.html">Gallery</a>
+      
+<details>
+<summary class="cursor-pointer">Services</summary>
+<div class="pl-4 mt-2 flex flex-col gap-2">
+<a href="../services/service-details-1.html">Recurring Flower Delivery</a>
+<a href="../services/service-details-2.html">Event & Wedding Flowers</a>
+<a href="../services/service-details-3.html">Same-Day Delivery</a>
+<a href="../services/service-details-4.html">Corporate Gifting</a>
+<a href="../services/service-details-5.html">Custom Floral Design</a>
+<a href="../services/service-details-6.html">International Delivery</a>
+</div>
+</details>
+      <a href="../about/about.html">About</a>
+      
+<details>
+<summary class="cursor-pointer">Blog</summary>
+<div class="pl-4 mt-2 flex flex-col gap-2">
+<a href="../blogs/blog1.html">Choosing Flowers for Every Occasion</a>
+<a href="../blogs/blog2.html">Seasonal Flowers You’ll Love</a>
+<a href="../blogs/blog3.html">Flower Arranging Like a Pro</a>
+<a href="../blogs/blog4.html">Common Flower Care Mistakes</a>
+<a href="../blogs/blog5.html">Meaning Behind Popular Flowers</a>
+<a href="../blogs/blog6.html">How Florists Keep Flowers Fresh</a>
+</div>
+</details>
+      <a href="pricing.html" class="text-accent">Pricing</a>
+      <a href="../contact/contact.html">Contact</a>
+      <hr class="border-gray-200 dark:border-gray-700 my-2">
+      <a href="../signin/login.html">Login</a>
+      <a href="../signin/register.html">Register</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="py-24">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <span class="text-sm font-semibold text-accent">Pricing Plans</span>
+    <h1 class="text-5xl font-extrabold mt-4 mb-6">
+      Simple, Transparent Pricing
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-300">
+      Choose a plan that fits your gifting needs — cancel anytime.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="pb-16">
+  <div class="flex justify-center items-center gap-4 text-sm font-medium">
+    <span id="monthlyLabel" class="text-accent">Monthly</span>
+
+    <button id="billingToggle"
+      class="w-14 h-8 bg-gray-200 dark:bg-gray-700 rounded-full relative transition">
+      <span id="toggleKnob"
+        class="w-6 h-6 bg-white dark:bg-gray-900 rounded-full absolute left-1 top-1 transition-all">
+      </span>
+    </button>
+
+    <span id="yearlyLabel">Yearly <span class="text-accent">(Save 20%)</span></span>
+  </div>
+</section>
+
+
+<section class="pt-16 pb-32">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+    
+    <div class="plan-card relative flex flex-col pt-14 pb-10 px-10 border border-gray-200 dark:border-gray-700 rounded-3xl text-center">
+      
+      <h3 class="font-semibold text-lg mb-2">Starter</h3>
+
+      <p class="text-gray-600 dark:text-gray-300 mb-6">
+        Perfect for small gestures
+      </p>
+
+      <p class="text-5xl font-extrabold mb-6 price"
+         data-monthly="1200"
+         data-yearly="11,499">
+        ₹1200
+      </p>
+
+      <ul class="space-y-4 mb-8 text-gray-600 dark:text-gray-300 flex-grow">
+        <li>Monthly Delivery</li>
+        <li>Email Reminders</li>
+        <li>Basic Customization</li>
+        <li>Standard Support</li>
+      </ul>
+
+      <a href="#"
+         class="mt-auto block bg-accent text-white py-4 rounded-full font-semibold text-center">
+        Get Started
+      </a>
+
+    </div>
+
+    
+    <div class="plan-card relative flex flex-col pt-14 pb-10 px-10 border border-gray-200 dark:border-gray-700 rounded-3xl text-center ring-2 ring-accent">
+
+      
+      <span class="absolute top-4 left-1/2 -translate-x-1/2 text-xs font-semibold bg-accent text-white px-4 py-1 rounded-full">
+        Most Popular
+      </span>
+
+      <h3 class="font-semibold text-lg mb-2">Professional</h3>
+
+      <p class="text-gray-600 dark:text-gray-300 mb-6">
+        Ideal for regular gifting
+      </p>
+
+      <p class="text-5xl font-extrabold mb-6 price"
+         data-monthly="3499"
+         data-yearly="33,499">
+        ₹3499
+      </p>
+
+      <ul class="space-y-4 mb-8 text-gray-600 dark:text-gray-300 flex-grow">
+        <li>Bi-Weekly Delivery</li>
+        <li>Email & SMS Reminders</li>
+        <li>Advanced Customization</li>
+        <li>Priority Support</li>
+      </ul>
+
+      <a href="#"
+         class="mt-auto block bg-accent text-white py-4 rounded-full font-semibold text-center">
+        Get Started
+      </a>
+
+    </div>
+
+    
+    <div class="plan-card relative flex flex-col pt-14 pb-10 px-10 border border-gray-200 dark:border-gray-700 rounded-3xl text-center">
+
+      <h3 class="font-semibold text-lg mb-2">Premium</h3>
+
+      <p class="text-gray-600 dark:text-gray-300 mb-6">
+        White-glove floral service
+      </p>
+
+      <p class="text-5xl font-extrabold mb-6 price"
+         data-monthly="4999"
+         data-yearly="57,999">
+        ₹4900
+      </p>
+
+      <ul class="space-y-4 mb-8 text-gray-600 dark:text-gray-300 flex-grow">
+        <li>Weekly Delivery</li>
+        <li>Custom Floral Designs</li>
+        <li>Dedicated Manager</li>
+        <li>24/7 Support</li>
+      </ul>
+
+      <a href="#"
+         class="mt-auto block bg-accent text-white py-4 rounded-full font-semibold text-center">
+        Get Started
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="py-28 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-4xl font-bold text-center mb-16">
+      Compare Plans
+    </h2>
+
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse text-left">
+        <thead>
+          <tr class="border-b border-gray-300 dark:border-gray-700">
+            <th class="py-4">Features</th>
+            <th class="py-4 text-center">Starter</th>
+            <th class="py-4 text-center">Professional</th>
+            <th class="py-4 text-center">Premium</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-600 dark:text-gray-300">
+          <tr class="border-b">
+            <td class="py-4">Delivery Frequency</td>
+            <td class="text-center">Monthly</td>
+            <td class="text-center">Bi-Weekly</td>
+            <td class="text-center">Weekly</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-4">Customization</td>
+            <td class="text-center">Basic</td>
+            <td class="text-center">Advanced</td>
+            <td class="text-center">Full</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-4">Reminders</td>
+            <td class="text-center">Email</td>
+            <td class="text-center">Email & SMS</td>
+            <td class="text-center">All Channels</td>
+          </tr>
+          <tr>
+            <td class="py-4">Support</td>
+            <td class="text-center">Standard</td>
+            <td class="text-center">Priority</td>
+            <td class="text-center">24/7 Dedicated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="py-28 bg-gray-100 dark:bg-primary
+text-gray-900 dark:text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6">
+      Ready to Automate Your Flower Gifting?
+    </h2>
+    <p class="text-lg opacity-90 mb-10">
+      Never forget a special date again with Stackly Florist.
+    </p>
+    <a href="../signin/login.html" class="bg-[#FF5F7F] text-white dark:bg-white dark:text-primary px-12 py-4 rounded-full font-semibold hover:opacity-90 transition duration-300">
+      Start Free Trial
+    </a>
+  </div>
+</section>
+
+
+<div id="footer"></div>
+<script>
+  const plans = document.querySelectorAll('.plan-card');
+
+  plans.forEach(plan => {
+    plan.addEventListener('click', () => {
+      plans.forEach(p => p.classList.remove('active'));
+      plan.classList.add('active');
+    });
+  });
+
+  // Default selected plan (Professional)
+  plans[1]?.classList.add('active');
+</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script>
+  const toggle = document.getElementById('billingToggle');
+  const knob = document.getElementById('toggleKnob');
+  const prices = document.querySelectorAll('.price');
+  const monthlyLabel = document.getElementById('monthlyLabel');
+  const yearlyLabel = document.getElementById('yearlyLabel');
+
+  let yearly = false;
+
+  toggle.addEventListener('click', () => {
+    yearly = !yearly;
+
+    prices.forEach(price => {
+      price.textContent = yearly
+        ? `₹${price.dataset.yearly}`
+        : `₹${price.dataset.monthly}`;
+    });
+
+    knob.style.left = yearly ? '2rem' : '0.25rem';
+
+    monthlyLabel.classList.toggle('text-accent', !yearly);
+    yearlyLabel.classList.toggle('text-accent', yearly);
+  });
+</script>
+<script>
+  const html = document.documentElement;
+
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    menuBtn.classList.toggle('active');
+  });
+
+  
+  const themeButtons = [
+    document.getElementById('themeToggle'),
+    document.getElementById('themeToggleMobile')
+  ];
+
+  function updateThemeIcon() {
+    themeButtons.forEach(btn => {
+      if (btn) btn.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  }
+
+  if (
+    localStorage.getItem('theme') === 'dark' ||
+    (!localStorage.getItem('theme') &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    html.classList.add('dark');
+  }
+
+  updateThemeIcon();
+
+  themeButtons.forEach(btn => {
+    btn?.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+      updateThemeIcon();
+    });
+  });
+
+  
+  const rtlButtons = [
+    document.getElementById('rtlToggle'),
+    document.getElementById('rtlToggleMobile')
+  ];
+
+  function setRTL(isRTL) {
+    html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+    localStorage.setItem('rtl', isRTL ? 'true' : 'false');
+  }
+
+  if (localStorage.getItem('rtl') === 'true') {
+    setRTL(true);
+  }
+
+  rtlButtons.forEach(btn => {
+    btn?.addEventListener('click', () => {
+      const isRTL = html.getAttribute('dir') !== 'rtl';
+      setRTL(isRTL);
+    });
+  });
+</script>
+<script>
+  fetch('../footer/footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+</script>
+</body>
+</html>
